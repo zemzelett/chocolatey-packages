@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+   <id>sameboy</id>
+    <version>0.14.2</version>
+    <title>SameBoy</title>
+    <authors>Lior Halphon</authors>
+    <owners>zem</owners>
+    <projectUrl>https://sameboy.github.io</projectUrl>
+    <iconUrl>https://sameboy.github.io/icon.png</iconUrl>
+    <copyright>Copyright Lior Halphon © 2015–2021</copyright>
+    <licenseUrl>https://github.com/LIJI32/SameBoy/blob/v0.14.2/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/LIJI32/SameBoy</projectSourceUrl>
+    <tags>sameboy gameboy emulator debugger</tags>
+    <summary>SameBoy - A Friendly and Powerful Game Boy Emulator</summary>
+    <description>
+      SameBoy is a user friendly, powerful and
+      [open source](https://github.com/LIJI32/SameBoy) Game Boy, Game Boy
+      Color and Super Game Boy emulator for macOS, Windows and Unix-like
+      platforms. SameBoy is extremely
+      [accurate](https://sameboy.github.io/features/#accuracy) and includes a
+      wide range of powerful
+      [debugging features](https://sameboy.github.io/features/#debugging),
+      making it ideal for both casual players and developers. In addition to
+      accuracy and developer capabilities, SameBoy has all the
+      [features](https://sameboy.github.io/features/) one would expect from an
+      emulator – from save states to
+      [scaling filters](https://sameboy.github.io/scaling/).
+    </description>
+    <dependencies>
+      <dependency id="vcredist140"></dependency>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
