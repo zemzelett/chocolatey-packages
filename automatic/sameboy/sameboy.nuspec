@@ -10,7 +10,7 @@
     <projectUrl>https://sameboy.github.io</projectUrl>
     <iconUrl>https://sameboy.github.io/icon.png</iconUrl>
     <copyright>Copyright Lior Halphon © 2015–2021</copyright>
-    <licenseUrl>https://github.com/LIJI32/SameBoy/blob/v0.14.2/LICENSE</licenseUrl>
+    <licenseUrl>https://cdn.jsdelivr.net/gh/liji32/sameboy@0.14.3/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/LIJI32/SameBoy</projectSourceUrl>
     <tags>sameboy gameboy emulator debugger</tags>
