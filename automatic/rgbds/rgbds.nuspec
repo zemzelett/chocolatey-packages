@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+   <id>rgbds</id>
+    <version>0.0.0</version>
+    <title>RGBDS</title>
+    <authors>Game Boy Development community</authors>
+    <owners>zem</owners>
+    <projectUrl>https://rgbds.gbdev.io</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/gbdev/rgbds-www/assets/rgbds-square-96.png</iconUrl>
+    <copyright>Game Boy Developoment community © 2020</copyright>
+    <licenseUrl>https://cdn.jsdelivr.net/gh/gbdev/rgbds@0.5.0/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/gbdev/rgbds</projectSourceUrl>
+    <tags>rgbds gameboy development assembly</tags>
+    <summary>Rednex Game Boy Development System: the de-facto development toolkit for the Game Boy and Game Boy Color.</summary>
+    <description>
+# RGBDS
+
+RGBDS (Rednex Game Boy Development System) is a free assembler/linker package for the Game Boy and Game Boy Color. It consists of:
+
+- rgbasm (assembler)
+- rgblink (linker)
+- rgbfix (checksum/header fixer)
+- rgbgfx (PNG‐to‐Game Boy graphics converter).
+    </description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
