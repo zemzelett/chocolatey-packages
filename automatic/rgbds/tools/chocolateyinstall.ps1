@@ -12,7 +12,7 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $installDir
   Url           = $url32
-  checksum32    = $checksum32
+  Checksum      = $checksum32
   Url64bit      = $url64
   Checksum64    = $checksum64
 }
