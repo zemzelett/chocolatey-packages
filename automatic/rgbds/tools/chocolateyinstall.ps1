@@ -9,12 +9,14 @@ $checksum64 = ''
 
 
 $packageArgs = @{
-  packageName   = $env:ChocolateyPackageName
-  unzipLocation = $installDir
-  Url           = $url32
-  Checksum      = $checksum32
-  Url64bit      = $url64
-  Checksum64    = $checksum64
+  PackageName    = $env:ChocolateyPackageName
+  UnzipLocation  = $installDir
+  Url            = $url32
+  Checksum       = $checksum32
+  Url64bit       = $url64
+  Checksum64     = $checksum64
+  ChecksumType   = 'sha256'
+  ChecksumType64 = 'sha256'
 }
 
 Install-ChocolateyZipPackage @packageArgs
