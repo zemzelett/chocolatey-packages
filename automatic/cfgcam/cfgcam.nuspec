@@ -8,7 +8,7 @@
     <authors>https://github.com/SuslikV</authors>
     <owners>zem</owners>
     <projectUrl>https://github.com/SuslikV/cfg-cam</projectUrl>
-    <iconUrl>no logo - what to do?</iconUrl>
+    <!-- <iconUrl>no logo - what to do?</iconUrl> -->
     <copyright>SuslikV © 2017</copyright>
     <licenseUrl>https://www.gnu.org/licenses/old-licenses/gpl-2.0.de.html</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

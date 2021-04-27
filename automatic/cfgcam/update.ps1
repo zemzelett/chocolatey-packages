@@ -17,6 +17,7 @@ function global:au_GetLatest {
     foreach ($asset in $json.assets) {
         if ($asset.name -match "exe") {
             $url = $asset.browser_download_url
+            break
         }
     }
     
@@ -26,4 +27,4 @@ function global:au_GetLatest {
     return $Latest
 }
 
-update -CheckSumFor 32
+update -ChecksumFor 32
