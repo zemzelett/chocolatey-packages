@@ -22,9 +22,9 @@
 SameBoy is a user friendly, powerful and [open source](https://github.com/LIJI32/SameBoy) Game Boy, Game Boy Color and Super Game Boy emulator for macOS, Windows and Unix-like platforms. SameBoy is extremely [accurate](https://sameboy.github.io/features/#accuracy) and includes a wide range of powerful [debugging features](https://sameboy.github.io/features/#debugging), making it ideal for both casual players and developers. In addition to accuracy and developer capabilities, SameBoy has all the [features](https://sameboy.github.io/features/) one would expect from an emulator – from save states to [scaling filters](https://sameboy.github.io/scaling/).
     </description>
     <dependencies>
-      <dependency id="vcredist140" version="14.*"></dependency>
+      <dependency id="vcredist140" version="14.0"></dependency>
     </dependencies>
-    <releaseNotes>https://sameboy.github.io/changelog</releaseNotes >
+    <releaseNotes>https://sameboy.github.io/changelog</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
