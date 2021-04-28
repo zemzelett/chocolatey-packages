@@ -8,7 +8,7 @@
     <authors>Game Boy Development community</authors>
     <owners>zem</owners>
     <projectUrl>https://rgbds.gbdev.io</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/zemzelett/chocolatey-packages/icons/rgbds-square-96.pngg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/zemzelett/chocolatey-packages/icons/rgbds-square-96.png</iconUrl>
     <copyright>Game Boy developoment community © 2020</copyright>
     <licenseUrl>https://cdn.jsdelivr.net/gh/gbdev/rgbds@0.5.0/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
