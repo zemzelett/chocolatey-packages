@@ -7,6 +7,7 @@
     <title>SameBoy</title>
     <authors>Lior Halphon</authors>
     <owners>zem</owners>
+    <packageSourceUrl>https://github.com/zemzelett/chocolatey-packages/tree/master/automatic/sameboy</packageSourceUrl>
     <projectUrl>https://sameboy.github.io</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/zemzelett/chocolatey-packages/icons/sameboy-icon.png</iconUrl>
     <copyright>Copyright Lior Halphon © 2015–2021</copyright>
@@ -18,22 +19,12 @@
     <description>
 # Overview
 
-SameBoy is a user friendly, powerful and
-[open source](https://github.com/LIJI32/SameBoy) Game Boy, Game Boy
-Color and Super Game Boy emulator for macOS, Windows and Unix-like
-platforms. SameBoy is extremely
-[accurate](https://sameboy.github.io/features/#accuracy) and includes a
-wide range of powerful
-[debugging features](https://sameboy.github.io/features/#debugging),
-making it ideal for both casual players and developers. In addition to
-accuracy and developer capabilities, SameBoy has all the
-[features](https://sameboy.github.io/features/) one would expect from an
-emulator – from save states to
-[scaling filters](https://sameboy.github.io/scaling/).
+SameBoy is a user friendly, powerful and [open source](https://github.com/LIJI32/SameBoy) Game Boy, Game Boy Color and Super Game Boy emulator for macOS, Windows and Unix-like platforms. SameBoy is extremely [accurate](https://sameboy.github.io/features/#accuracy) and includes a wide range of powerful [debugging features](https://sameboy.github.io/features/#debugging), making it ideal for both casual players and developers. In addition to accuracy and developer capabilities, SameBoy has all the [features](https://sameboy.github.io/features/) one would expect from an emulator – from save states to [scaling filters](https://sameboy.github.io/scaling/).
     </description>
     <dependencies>
-      <dependency id="vcredist140"></dependency>
+      <dependency id="vcredist140" version="14.*"></dependency>
     </dependencies>
+    <releaseNotes>https://sameboy.github.io/changelog</releaseNotes >
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

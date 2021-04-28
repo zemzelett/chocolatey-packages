@@ -7,6 +7,7 @@
     <title>cfg-cam</title>
     <authors>https://github.com/SuslikV</authors>
     <owners>zem</owners>
+    <packageSourceUrl>https://github.com/zemzelett/chocolatey-packages/tree/master/automatic/cfgcam</packageSourceUrl>
     <projectUrl>https://github.com/SuslikV/cfg-cam</projectUrl>
     <!-- <iconUrl>no logo - what to do?</iconUrl> -->
     <copyright>SuslikV © 2017</copyright>
@@ -18,22 +19,19 @@
     <description>
 # cfg-cam
 
-command-line application that saves and loads DirectShow webcam settings to/from
-the file
+command-line application that saves and loads DirectShow webcam settings to/from the file
 
 ## Usage
 
-Make sure that cameras are running (this application doesn't build new graph for
-the device). All settings stored in cam_sett.cfg file at the same folder as .exe
-file.
+Make sure that cameras are running (this application doesn't build new graph for the device). All settings stored in cam_sett.cfg file at the same folder as .exe file.
 
 Run without options to load saved settings.
 
-Run with option "--savedev" to save current settings of all enabled DirectShow
-video input devices.
+Run with option "--savedev" to save current settings of all enabled DirectShow video input devices.
 
 Run with option "--help" to get brief help info.
     </description>
+    <releaseNotes>https://github.com/SuslikV/cfg-cam/releases</releaseNotes >
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
