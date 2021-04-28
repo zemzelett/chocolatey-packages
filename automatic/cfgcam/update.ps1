@@ -11,6 +11,14 @@ function global:au_SearchReplace {
     }
 }
 
+# I had to add this, because the exe was downloaded and remained inside the
+# tools directory, being packaged and failing the validation testing online...
+# https://github.com/majkinetor/au#automatic-checksums
+# https://github.com/majkinetor/au#manual-checksums
+function global:au_BeforeUpdate() {
+    $Latest.Checksum32 = Get-RemoteChecksum $Latest.Url
+}
+
 function global:au_GetLatest {
     $json = Invoke-RestMethod -Uri $releases
 
@@ -27,4 +35,4 @@ function global:au_GetLatest {
     return $Latest
 }
 
-update -ChecksumFor 32
+update -ChecksumFor None
