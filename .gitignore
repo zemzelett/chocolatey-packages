@@ -5,3 +5,4 @@ update_info.xml
 Update-AUPackages.md
 *.nupkg
 *.exe
+update_vars.ps1
