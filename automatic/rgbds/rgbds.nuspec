@@ -8,17 +8,18 @@
     <authors>Game Boy Development community</authors>
     <owners>zem</owners>
     <projectUrl>https://rgbds.gbdev.io</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/gbdev/rgbds-www/assets/rgbds-square-96.png</iconUrl>
-    <copyright>Game Boy Developoment community © 2020</copyright>
+    <iconUrl>https://cdn.jsdelivr.net/gh/zemzelett/chocolatey-packages/icons/rgbds-square-96.pngg</iconUrl>
+    <copyright>Game Boy developoment community © 2020</copyright>
     <licenseUrl>https://cdn.jsdelivr.net/gh/gbdev/rgbds@0.5.0/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/gbdev/rgbds</projectSourceUrl>
-    <tags>rgbds gameboy development assembly</tags>
+    <tags>rgbds nintendo gameboy game boy color development assembly</tags>
     <summary>Rednex Game Boy Development System: the de-facto development toolkit for the Game Boy and Game Boy Color.</summary>
     <description>
 # RGBDS
 
-RGBDS (Rednex Game Boy Development System) is a free assembler/linker package for the Game Boy and Game Boy Color. It consists of:
+RGBDS (Rednex Game Boy Development System) is a free assembler/linker package
+for the Game Boy and Game Boy Color. It consists of:
 
 - rgbasm (assembler)
 - rgblink (linker)

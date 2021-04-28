@@ -32,7 +32,7 @@ Run without options to load saved settings.
 Run with option "--savedev" to save current settings of all enabled DirectShow
 video input devices.
 
-Run with option "--help" to get brief help info..
+Run with option "--help" to get brief help info.
     </description>
   </metadata>
   <files>
