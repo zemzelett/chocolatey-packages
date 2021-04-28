@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
    <id>cfgcam</id>
-    <version>0.0.0</version>
+    <version>1.0</version>
     <title>cfg-cam</title>
     <authors>https://github.com/SuslikV</authors>
     <owners>zem</owners>

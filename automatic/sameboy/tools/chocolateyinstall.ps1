@@ -2,8 +2,8 @@
 
 $sameboyPkgDir = $env:ChocolateyInstall + "\lib\" + $env:ChocolateyPackageName
 $sameboyInstallDir = $sameboyPkgDir + "\sameboy"
-$url = 'https://github.com/LIJI32/SameBoy/releases/download/v0.14.2/sameboy_winsdl_v0.14.2.zip'
-$checksum = '6BEC9E92871D14E9A8FE19FC63FCE9AD2E17E7BBEDDBDD9282638B5A6C63EBE5'
+$url = 'https://github.com/LIJI32/SameBoy/releases/download/v0.14.3/sameboy_winsdl_v0.14.3.zip'
+$checksum = ''
 
 # $sameboyDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition) + "\sameboy"
 $SameboyExePath = $sameboyInstallDir + '\sameboy.exe'
