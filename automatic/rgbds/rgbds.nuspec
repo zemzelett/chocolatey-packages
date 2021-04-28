@@ -26,7 +26,7 @@ RGBDS (Rednex Game Boy Development System) is a free assembler/linker package fo
 - rgbfix (checksum/header fixer)
 - rgbgfx (PNG‐to‐Game Boy graphics converter).
     </description>
-    <releaseNotes>https://github.com/gbdev/rgbds/releases</releaseNotes >
+    <releaseNotes>https://github.com/gbdev/rgbds/releases</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

@@ -31,7 +31,7 @@ Run with option "--savedev" to save current settings of all enabled DirectShow v
 
 Run with option "--help" to get brief help info.
     </description>
-    <releaseNotes>https://github.com/SuslikV/cfg-cam/releases</releaseNotes >
+    <releaseNotes>https://github.com/SuslikV/cfg-cam/releases</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
