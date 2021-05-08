@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>bgb</id>
+    <version>1.5.8</version>
+    <title>BGB</title>
+    <authors>Bas Steendijk</authors>
+    <owners>mareccs</owners>
+    <licenseUrl>http://bgb.bircd.org/</licenseUrl>
+    <projectUrl>http://bgb.bircd.org/</projectUrl>
+    <iconUrl>https://res.cloudinary.com/mareccs/image/upload/v1613942814/chocolatey/bgb_b9afcw.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>BGB is a Gameboy emulator, a program that lets you play Gameboy and Gameboy Color games on a pc. It does this with many features that give a good gameplay experience, such as gamepad support, high quality sound and graphics, smooth Vsync animation, and low latency. In addition, it contains a debugger that lets you analyze/look into the emulation, create cheat codes, and assist in creating and modifying roms. Because of BGB's high emulation accuracy, if your rom works in BGB, it will most likely work on hardware too.
+
+Features
+- emulation of the GameBoy, GameBoy Color, and Super Gameboy
+- accurate emulation of the hardware, based on research with lots of test roms, useful for debugging/rom development. some highlights:
+- clock exact timing of LCD behavior/state changes
+- realistic initial ram values - random but with specific bit patterns, and simulated values left by bootroms (for example "nibbler (pd)" depends on this)
+- accurate emulation of LCD register writes during scanline (prehistorik man, demotronic demo)
+- emulation of inaccessible VRAM and OAM as on real hardware
+- 10 sprites per line limit
+- clock exact emulation of sprites causing mode 3 to take longer
+- correct memory access timing (access happening at the last/second to last clock of an opcode)
+- accurate emulation of the differences between DMG and GBC, including timing differences, differences in hardware behavior, initial state, etc.
+- can run a GBC rom as on a DMG, and a DMG rom as on a GBC
+- powerful debugger:
+- disassembler with syntax selectable from: no$gmb, rgbds, wla
+- assembler (change code and ability to save modified rom)
+- symbols (SYM file) support
+- "inline" editing in code, data, and stack viewer
+- breakpoints
+- break on access
+- conditional breakpoints
+- "on jump" access breakpoints for breaking before a jump into a range is taken.
+- source code breakpoints (ld b,b)
+- debug messages (ld d,d)
+- singlestepping/tracing/animating/step out/step over
+- vram viewer: BG map, tiles, OAM, palette.
+- IO registers viewer
+- live display of data during emulation and freezing of ram values
+- break on exceptions (accessing inaccessible VRAM, read unitialized RAM, echo ram access, access locked external ram, disable lcd outside vblank)
+- ability to modify all registers and state at any time
+- joypad window allows simulating button presses at any time while debugging
+- SGB multiplayer with up to 4 gamepads
+- graphics output: GDI, DirectDraw, Direct3D, OpenGL, null output
+- graphics doubler: HQ2X, Scale2x, scanlines filter, blocky
+- sound output: waveout, directsound, null, and disk writer supported. support for writing the 4 channels to separate wav files
+- AVI recording with installed codec of choice that is synchronized with recorded WAV file, and can be combined into a single video afterwards.
+- runs almost all roms perfectly, compatibility comparable with the best GB/C emulators
+- Accurate/high quality sound emulation, bandlimited synthesis
+- accurate video emulation including "high color" graphics, correct sprite/background priorities, 10 sprites/line limit, and mid-scanline register changes.
+- This emulator is fast.
+- Joystick/Gamepad support, everything mappable to every button
+- some user interface keys are configurable and can be mapped to joystick/gamepad buttons
+- MBC3 Real Time Clock emulation. RTC is saved/loaded in the .sav file, compatible with VBA
+- Auto delay/frameskip, emulation runs at 100% real speed and full 60 fps
+- GameGenie and GameShark cheat, load/save cheats (auto and manual), "cheat searcher", easy creation of new cheat codes
+- save/load state with quick (zsnes style, and mappable) keys.
+- back and forward compatibility of sav files and save states so your saved progress is not lost. bgb can load all save files of previous versions.
+- Load from ZIP and GZIP files
+- good OS/platform compatibility/low requirements
+- support for optional border bitmap and pseudo and real fullscreen modes.
+- TCP/IP game link support
+	</description>
+    <summary>BGB is a GameBoy emulator/debugger which runs on Windows and Wine.
+	</summary>
+    <copyright>Bas Steendijk</copyright>
+	<releaseNotes>http://bgb.bircd.org/history.html</releaseNotes>
+    <tags>gameboy emulator emu bgb game games emulate portable retro rom debug debugger</tags>
+    <packageSourceUrl>https://github.com/mareccs/Chocolatey-packages</packageSourceUrl>
+  </metadata>
+</package>
