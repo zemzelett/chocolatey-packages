@@ -1,4 +1,4 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 
 $pkgDir = $env:ChocolateyInstall + "\lib\" + $env:ChocolateyPackageName
 $installDir = $pkgDir + "\bgb"
@@ -20,15 +20,15 @@ $packageArgs = @{
 }
 Install-ChocolateyZipPackage @packageArgs
 
-if ((Get-OSArchitectureWidth 64) -and $env:chocolateyForceX86 -ne $true) {
-    $exePath = $installDir + '\bgb.exe'
-    New-Item -Path $installDir -Name "bgb.exe.gui" -ItemType "file"
-} 
-else {
+if ([System.Environment]::Is64BitOperatingSystem -and $env:chocolateyForceX86 -ne $true) {
     $exePath = $installDir + '\bgb64.exe'
     New-Item -Path $installDir -Name "bgb64.exe.gui" -ItemType "file"
+} 
+else {
+    $exePath = $installDir + '\bgb.exe'
+    New-Item -Path $installDir -Name "bgb.exe.gui" -ItemType "file"
 }
 
 $programsPath = [environment]::GetFolderPath([environment+specialfolder]::Programs)
-$shortcutPath = $programsPath + '\BGB.lnk'
+$shortcutPath = Join-Path $programsPath '\BGB.lnk'
 Install-ChocolateyShortcut -shortcutFilePath $shortcutPath -targetPath $exePath
