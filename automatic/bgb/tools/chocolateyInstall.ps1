@@ -1,11 +1,16 @@
 $ErrorActionPreference = 'Stop'
 
+$url32 = '';
+$checksum32 = '';
+$url64 = '';
+$checksum64 = '';
+
 $packageArgs = @{
     packageName    = 'bgb'
-    url            = 'http://bgb.bircd.org/bgb.zip'
-    url64bit       = 'http://bgb.bircd.org/bgbw64.zip'
-    checksum       = '62239596976206AF5CDC337C4F733616605E5D1C14CF1028F66458501A839CBC'
-    checksum64     = '1016CF355C62173D8FACB0B56C54B52DF8EFCF0364732B52A9388D36FBDBB0CC'
+    url            = $url32
+    checksum       = $checksum32
+    url64bit       = $url64
+    checksum64     = $checksum64
     checksumType   = 'sha256'
     checksumType64 = 'sha256'
     dest           = $(Split-Path -parent $MyInvocation.MyCommand.Definition) + '\bgb'
