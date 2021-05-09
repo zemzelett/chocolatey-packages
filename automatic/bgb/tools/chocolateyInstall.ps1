@@ -3,10 +3,10 @@
 $pkgDir = $env:ChocolateyInstall + "\lib\" + $env:ChocolateyPackageName
 $installDir = $pkgDir + "\bgb"
 
-$url32 = '';
-$checksum32 = '';
-$url64 = '';
-$checksum64 = '';
+$url32 = 'https://bgb.bircd.org/bgb159.zip';
+$checksum32 = '79357345b5fccf91b632e4987c0b5aa0549a70b563085f8caad86ea8c7ceacf9';
+$url64 = 'https://bgb.bircd.org/bgb159w64.zip';
+$checksum64 = '8685fc9daf09ceb384330ce543d05471fcc1d427c65de0d68875a97a57532763';
 
 $packageArgs = @{
     PackageName    = $env:ChocolateyPackageName
