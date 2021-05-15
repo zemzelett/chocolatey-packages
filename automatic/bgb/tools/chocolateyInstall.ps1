@@ -38,7 +38,8 @@ if ($(Test-Path $env:TEMP\bgb.ini) -eq $true) {
     Copy-Item $env:TEMP\bgb.ini -Destination $installDir\bgb.ini
 }
 
-#Set modify permissions on bgb.ini for builtin users group
+# Set modify permissions on bgb.ini for builtin users group
+# Source: https://superuser.com/a/1176767
 $acl = Get-Acl $installDir\bgb.ini
 $sid = New-Object System.Security.Principal.SecurityIdentifier([System.Security.Principal.WellKnownSidType]::BuiltinUsersSid, $null)
 $rule = New-Object System.Security.AccessControl.FileSystemAccessRule($sid, "Modify", "Allow")
