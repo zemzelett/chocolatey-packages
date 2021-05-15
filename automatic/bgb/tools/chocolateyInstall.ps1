@@ -33,7 +33,12 @@ $programsPath = [environment]::GetFolderPath([environment+specialfolder]::Progra
 $shortcutPath = Join-Path $programsPath '\BGB.lnk'
 Install-ChocolateyShortcut -shortcutFilePath $shortcutPath -targetPath $exePath
 
-# Set modify permissions on bgb.ini for builtin users group
+# Copy existing bgb.ini
+if ($(Test-Path $env:TEMP\bgb.ini) -eq $true) {
+    Copy-Item $env:TEMP\bgb.ini -Destination $installDir\bgb.ini
+}
+
+#Set modify permissions on bgb.ini for builtin users group
 $acl = Get-Acl $installDir\bgb.ini
 $sid = New-Object System.Security.Principal.SecurityIdentifier([System.Security.Principal.WellKnownSidType]::BuiltinUsersSid, $null)
 $rule = New-Object System.Security.AccessControl.FileSystemAccessRule($sid, "Modify", "Allow")
