@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
    <id>rgbds</id>
-    <version>0.5.1</version>
+    <version>0.5.2</version>
     <title>RGBDS</title>
     <authors>Game Boy Development community</authors>
     <owners>zem</owners>
