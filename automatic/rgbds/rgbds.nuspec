@@ -10,7 +10,7 @@
     <packageSourceUrl>https://github.com/zemzelett/chocolatey-packages/tree/master/automatic/rgbds</packageSourceUrl>
     <projectUrl>https://rgbds.gbdev.io</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/zemzelett/chocolatey-packages/icons/rgbds-square-96.png</iconUrl>
-    <copyright>Game Boy developoment community © 2020</copyright>
+    <copyright>Game Boy development community</copyright>
     <licenseUrl>https://cdn.jsdelivr.net/gh/gbdev/rgbds@0.5.0/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/gbdev/rgbds</projectSourceUrl>
