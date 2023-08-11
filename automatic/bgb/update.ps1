@@ -15,7 +15,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $res = Invoke-WebRequest -Uri $website
-    $version = $res.ParsedHtml.title | Select-String -Pattern '\d\.\d\.\d' | ForEach-Object { $_.Matches } | ForEach-Object { $_.Value }
+    $version = $res.ParsedHtml.title | Select-String -Pattern '\d+\.\d+\.\d+' | ForEach-Object { $_.Matches } | ForEach-Object { $_.Value }
     $versionInFile = $version.replace('.', '')
 
     $url32 = $website + 'bgb' + $versionInFile + '.zip'

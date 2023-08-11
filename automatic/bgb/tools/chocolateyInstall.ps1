@@ -18,15 +18,24 @@ $packageArgs = @{
     ChecksumType   = 'sha256'
     ChecksumType64 = 'sha256'
 }
+
+if ($(Test-Path $installDir\bgb.ini) -eq $true) {
+    Copy-Item $installDir\bgb.ini -Destination $env:TEMP\bgb.ini
+}
+
 Install-ChocolateyZipPackage @packageArgs
 
 if ([System.Environment]::Is64BitOperatingSystem -and $env:chocolateyForceX86 -ne $true) {
     $exePath = $installDir + '\bgb64.exe'
-    New-Item -Path $installDir -Name "bgb64.exe.gui" -ItemType "file"
+    if ($(Test-Path $installDir\bgb64.exe.gui) -eq $false) {
+        New-Item -Path $installDir -Name "bgb64.exe.gui" -ItemType "file"
+    }
 } 
 else {
     $exePath = $installDir + '\bgb.exe'
-    New-Item -Path $installDir -Name "bgb.exe.gui" -ItemType "file"
+    if ($(Test-Path $installDir\bgb.exe.gui) -eq $false) {
+        New-Item -Path $installDir -Name "bgb.exe.gui" -ItemType "file"
+    }
 }
 
 $programsPath = [environment]::GetFolderPath([environment+specialfolder]::Programs)
