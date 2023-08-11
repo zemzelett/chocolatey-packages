@@ -2,10 +2,10 @@
 
 $pkgDir = $env:ChocolateyInstall + "\lib\" + $env:ChocolateyPackageName
 $installDir = $pkgDir + "\rgbds"
-$url32 = 'https://github.com/gbdev/rgbds/releases/download/v0.5.2/rgbds-0.5.2-win32.zip'
-$checksum32 = '00233a80fe8269fa0be99504a5f2ef308b38f8094bd28dab7232e76ed306500d'
-$url64 = 'https://github.com/gbdev/rgbds/releases/download/v0.5.2/rgbds-0.5.2-win64.zip'
-$checksum64 = '36907be26993876b1cacf320d6db18436eabe045ae731a09a183183a9f9591c8'
+$url32 = 'https://github.com/gbdev/rgbds/releases/download/v0.6.1/rgbds-0.6.1-win32.zip'
+$checksum32 = 'be2c81f7155be50f4cdbf4fbfe6d2499c2bc3df72cc0545dbd63ef5888ff2816'
+$url64 = 'https://github.com/gbdev/rgbds/releases/download/v0.6.1/rgbds-0.6.1-win64.zip'
+$checksum64 = '3cae18202a0672152063e49b935ddb9d754f7c2146447bab8aec875be7b866cf'
 
 
 $packageArgs = @{
